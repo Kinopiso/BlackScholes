@@ -25,7 +25,7 @@ double LinearInterpolation(vector<double>& inVectorX,
 	if(i == 0){
 		i++;
 	}else if(i >= inVectorX.size()){
-		i--;
+		i = inVectorX.size() - 1;
 	}
 
 	lReturn = inVectorY[i-1] + 
