@@ -11,6 +11,7 @@ int main(void)
 {
 	vector<double> lIRRate(2);
 	vector<double> lIRTime(2);
+	
 	double lTime;
 	double tmp;
 
@@ -22,8 +23,16 @@ int main(void)
 
 	lTime = 0.5;
 	tmp = LinearInterpolation(lIRTime, lIRRate, lTime);
-	
 	cout << tmp <<"\n";
+	
+	lTime = -0.5;
+	tmp = LinearInterpolation(lIRTime, lIRRate, lTime);
+	cout << tmp <<"\n";
+
+	lTime = 1.5;
+	tmp = LinearInterpolation(lIRTime, lIRRate, lTime);
+	cout << tmp <<"\n";
+
 	cin >> tmp;
 
 	return(0);
