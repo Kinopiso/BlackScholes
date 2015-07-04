@@ -74,6 +74,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BlackScholes.cpp" />
+    <ClCompile Include="BSMain.cpp" />
+    <ClCompile Include="Interpolation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlackScholes.h" />
+    <ClInclude Include="Interpolation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
